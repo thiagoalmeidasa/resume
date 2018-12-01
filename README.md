@@ -8,6 +8,23 @@ As of **v1.2**, there is an option to choose from two templates:
 
 It is licensed under the Apache License 2.0.
 
+
+<!-- vim-markdown-toc GFM -->
+
+* [Motivation](#motivation)
+* [Preview](#preview)
+* [Dependencies](#dependencies)
+* [Availability](#availability)
+* [Changelog](#changelog)
+  * [v1.2](#v12)
+  * [v1.1](#v11)
+* [TODO](#todo)
+* [Known Issues:](#known-issues)
+* [Thanks to](#thanks-to)
+* [License](#license)
+
+<!-- vim-markdown-toc -->
+
 ## Motivation
 
 Common LaTeX resume-builders such as [**moderncv**](http://www.latextemplates.com/template/moderncv-cv-and-cover-letter)  and the [**friggeri-cv**](https://github.com/afriggeri/cv) look great if you're looking for a multi-page resume with numerous citations, but usually imperfect for making a thorough, single-page one. A lot of companies today search resumes based on [keywords](http://www.businessinsider.com/most-big-companies-have-a-tracking-system-that-scans-your-resume-for-keywords-2012-1) but at the same time require/prefer a one-page resume, especially for undergraduates. 
@@ -54,6 +71,11 @@ This template attempts to **look clean**, highlight **details**, be a **single p
 1. Overflows onto second page if any column's contents are more than the vertical limit
 2. Hacky space on the first bullet point on the second column.
 3. Hacky redefinition of \refname to omit 'References' text for publications in the MacFonts version.
+
+
+## Thanks to
+
+  Thanks to https://github.com/deedy/Deedy-Resume
 
 ## License
     Copyright 2014 Debarghya Das
