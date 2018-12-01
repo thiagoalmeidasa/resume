@@ -1,0 +1,240 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Thiago}{Almeida}{
+    \href{mailto:thiagoalmeidasa@gmail.com}{thiagoalmeidasa@gmail.com}
+| \href{mailto:thiago@mossteam.com.br}{thiago@mossteam.com.br}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth}
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     EDUCATION
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \section{Education}
+
+    \subsection[Universidade Federal do Pará]{Universidade Federal
+    \\ do Pará}
+    \descript{BS in Computer Engineering | Undergraduate}
+    \location{ Jun 2017 | Belém, PA}
+    \sectionsep
+
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     LINKS
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \section{Links}
+    Github:// \href{https://github.com/thiagoalmeidasa}{\bf thiagoalmeidasa} \\
+    LinkedIn://  \href{https://www.linkedin.com/in/thiagoalmeidasa}{\bf thiagoalmeidasa} \\
+    Twitter://  \href{https://twitter.com/thiagoalmeidasa}{\bf @thiagoalmeidasa} \\
+    StackExchange:// \href{https://stackexchange.com/users/3720131/thiago-almeida?tab=accounts}{\bf thiago-almeida}
+
+
+    \sectionsep
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     COURSEWORK
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \section{Skills}
+    \subsection{Linux Server}
+    \location{Distros:}
+    Debian\textbullet{} Ubuntu \textbullet{} RedHat \textbullet{} CentOS \textbullet{}\\
+    Gentoo \textbullet{} ArchLinux \textbullet{} CoreOS \textbullet{}\\
+    RancherOS \textbullet{} Atomic \textbullet{}\\
+    \location{Services:}
+    Apache \textbullet{} Nginx \textbullet{} MySQL \textbullet{} PostgreSQL
+    \textbullet{} BIND \textbullet{} DHCP \textbullet{} Iptables \textbullet{}
+    Postfix \textbullet{} Dovecot \textbullet{} Cyrus \textbullet{} Clamav
+    \textbullet{} SpamAssassin \textbullet{} Rmilter \textbullet{} Samba
+    \textbullet{} OpenLDAP \textbullet{} OpenVPN \textbullet{} Nginx
+    \textbullet{} Squid \textbullet{} DRBD \textbullet{} MongoDB \textbullet{}
+    Cassandra \textbullet{} DyanamoDB \textbullet{} AWS \\
+    \location{Tools:}
+    OpenStack \textbullet{} KVM \textbullet{} Xen \textbullet{} Puppet
+    \textbullet{} Ansible \textbullet{} Docker \textbullet{} Swarm
+    \textbullet{} Kubernetes \\
+    Openshift Origin \textbullet{} Elasticsearch \textbullet{} Nagios
+    Zabbix \textbullet{} Prometheus \textbullet{} Grafana \textbullet{}
+    Kibana \textbullet{} Logstash \textbullet{} Terraform \textbullet{} AWS Lambda\\
+    \location{Cloud Providers}
+    DigitalOcean \textbullet{} Rackspace \textbullet{} Scaleway \textbullet{}
+    AWS \textbullet{} Linode \\
+    \location{CI/CD Tools}
+    Jenkins \textbullet{} Gitlab \textbullet{} CircleCI \textbullet{} TravisCI
+
+    \subsection{Programming}
+    \location{Over 5000 lines:}
+    Shell \textbullet{} Python \textbullet{} \LaTeX\ \\
+    \location{Over 1000 lines:}
+    HTML \textbullet{} CSS \textbullet{} PHP \textbullet{} Javascript \\
+    \location{Familiar:}
+    Nodejs \textbullet{} Batch  \textbullet{} SQL \textbullet{} Ruby
+    \textbullet{} Perl \textbullet{} Golang \textbullet{} Java
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Languages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Languages}
+\subsection{Native Level}
+Portuguese \\
+\subsection{Professional Level}
+English
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %     EXPERIENCE
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \section{Experience}
+    \runsubsection{\href{http://devgrid.co.uk}{Devgrid}}
+    \descript{| Cloud Infrastructure Engineer}
+    \location{Aug 2017 - present}
+    As a Cloud Infrastructure Engineer, I designed/deployed solutions such as:
+    \vspace{\topsep} % Hacky fix for awkward extra vertical space
+    \begin{tightemize}
+      \item smart dashboards and tailor-made alerts to monitor our microservices;
+      \item log stacks that receive, analyze and store more than 1k messages per second;
+      \item smooth and effective CI / CD pipelines for at least 80 projects;
+      \item a multi-cloud environment, orchestrated with infrastructure as a code;
+    \end{tightemize}
+    As an inexperienced Data Engineer, I'm working on things like:
+    \begin{tightemize}
+      \item provide easy access to various resources like large data sets and on-demand GPU powered machines;
+      \item help reduce model results' evaluation time to a couple of minutes instead of a dozen;
+      \item easy ways to monitor the results of currently deployed models;
+    \end{tightemize}
+    \runsubsection{\href{http://mossteam.com.br}{MOSS Open Source Services}}
+    \descript{| Lead DevOps | Startup co-founder}
+    \location{Aug 2015 - Jan 2018}
+    \begin{tightemize}
+    \item Experience with local and international client management in more
+        than 30 projects in two years, using our self designed financial and
+        contractual environment.
+    \item Strong experience designing and implementing continuous integration
+        and delivery environments for external and internal projects using
+        different tools like Jenkins, GitLab, TravisCI and CircleCI.
+    \item Set up and maintain some cloud services like email, centralized login,
+        file sharing, ERP, CRM for a small company using automation tools.
+    \end{tightemize}
+    \runsubsection{\href{http://ctic.ufpa.br}{UFPa Datacenter}}
+    \descript{| Security Analyst }
+    \location{Aug 2015 - Jun 2017}
+    \begin{tightemize}
+    \item I performed several trainings with the local team to review concepts
+        and tools such as Docker, Ansible, Git, Integration and Continuous
+        Delivery of software, and Infrastructure as a Code.
+    \item Improved log server solution with Elasticsearch, Logstash, and
+        Kibana, simplifying incident analysis and monitoring network traffic.
+    \item Design and implementation of container environment for critical
+        services like OpenLDAP, email stack, and several others, decreasing the
+        time to launch a new server or service.
+    \item I helped decrease the response time for calls in the helpdesk with
+        the use of task automation tools like Ansible and Puppet.
+    \end{tightemize}
+    \runsubsection{\href{http://capengenharia.com.br/}{CAP Engenharia LTDA}}
+    \descript{| Infrastructure Analyst }
+    \location{Apr 2014 - May 2015 | Belém, PA}
+    %\vspace{\topsep} % Hacky fix for awkward extra vertical space
+    \begin{tightemize}
+    \item Experience as an assistant on commercial projects of structured
+        cabling.
+    \item Experience with process management and tools like ERP, and CRM.
+    \item Strong experience with collaboration between teams from different
+        areas.
+    \item I was able to reduce costs and improve delivery times of project
+        stages by improving the procurement process of materials.
+    \end{tightemize}
+    \runsubsection{Some Small companies and Research Labs}
+    \descript{| Sysadmin Intern}
+    \location{May 2011 – Mar 2014 | Belém, PA}
+    \begin{tightemize}
+    \item Build a centralized auth system with OpenLDAP for
+        Linux and Windows clients;
+    \item Proficiency with python, bash, and perl for automation scripts.
+    \item Virtualization experience with KVM and Virtualbox.
+    \item Experience with high availability Linux practices, distributed file
+        systems and block storages.
+    \end{tightemize}
+
+\end{minipage}
+\end{document}  \documentclass[]{article}
