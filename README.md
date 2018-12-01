@@ -1,4 +1,4 @@
-Deedy-Resume
+My Resume
 =========================
 
 A **one-page**, **two asymmetric column** resume template in **XeTeX** that caters particularly to an **undergraduate Computer Science** student.
